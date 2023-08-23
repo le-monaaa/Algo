@@ -20,5 +20,5 @@ for tc in range(1, T+1):
                 temp = pattern[0:i]
                 if temp == pattern[i:i+len(temp)]:
                     pattern = temp
-
+ 
     print(f"#{tc} {len(pattern)}")
