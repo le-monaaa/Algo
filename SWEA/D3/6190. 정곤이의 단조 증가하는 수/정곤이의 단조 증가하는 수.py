@@ -22,8 +22,9 @@ for tc in range(1, T+1):
             if i == j:
                 continue
             else:
-                if check(nums[i]*nums[j]):
-                    if max < nums[i]*nums[j]:
-                        max = nums[i]*nums[j]
+                c = nums[i] * nums[j]
+                if check(c):
+                    if max < c:
+                        max = c
 
     print(f"#{tc} {max}")
