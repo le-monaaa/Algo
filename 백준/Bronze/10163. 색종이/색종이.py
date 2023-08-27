@@ -9,11 +9,16 @@ while i < n+1:
             table[r][c] = i
 
     i += 1
+answer = []
 for p in range(1, i+1):
     cnt = 0
-    for r in range(t):
-        for c in range(t):
-            if table[r][c] == p:
-                cnt += 1
-    if cnt != 0:
-        print(cnt)
+    for h in table:
+        cnt += h.count(p)
+    answer.append(cnt)
+
+if answer[-1] == 0:
+    for k in answer[:-1]:
+        print(k)
+else:
+    for k in answer:
+        print(k)
