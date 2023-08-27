@@ -14,11 +14,5 @@ for p in range(1, i+1):
     cnt = 0
     for h in table:
         cnt += h.count(p)
-    answer.append(cnt)
-
-if answer[-1] == 0:
-    for k in answer[:-1]:
-        print(k)
-else:
-    for k in answer:
-        print(k)
+    if not(p == i and cnt == 0):
+        print(cnt)
