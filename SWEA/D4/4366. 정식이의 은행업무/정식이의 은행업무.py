@@ -1,9 +1,4 @@
-# SWEA 4366 정식이의 은행업무
-# 정식이는 한 숫자를 2진수와 3진수로 기억한다. 컴퓨터인가? 그런데 또 각각 한 글자씩만 잘못 기억하는 걸 보니 그냥 허세다
-# 정식이가 잘못 기억하는 송금액을 추측하는 프로그램
-# T/ 2진수/3진수
-
-# 2진수 -> 10진수 변환 함수
+# 2진수 -> 10진수
 def binToHex(bin_num):
     bin_num = list(map(int, bin_num))
     num = 1
@@ -13,7 +8,7 @@ def binToHex(bin_num):
         num *= 2
     return sum_n
 
-# 3진수 -> 10진수 변환 함수
+# 3진수 -> 10진수
 def terToHex(ter_num):
     ter_num = list(map(int, ter_num))
     num = 1
